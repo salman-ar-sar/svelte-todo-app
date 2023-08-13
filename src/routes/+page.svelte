@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="flex flex-1 justify-center items-center">
+	<h1 class="text-3xl font-bold underline text-cyan-200">Hello world!</h1>
+</div>
+
+<style lang="postcss">
+	:global(html) {
+		background-color: theme(colors.gray.800);
+	}
+</style>
