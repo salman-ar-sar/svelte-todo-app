@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { flip } from 'svelte/animate';
 	import type { TodoStore } from './TodoStore';
 	import { receive, send } from './transitions';
 
@@ -8,7 +9,12 @@
 
 <ul class="space-y-2">
 	{#each $store.filter((todo) => todo.done === done) as todo (todo.id)}
-		<li class:done in:receive={{ key: todo.id }} out:send={{ key: todo.id }}>
+		<li
+			class:done
+			in:receive={{ key: todo.id }}
+			out:send={{ key: todo.id }}
+			animate:flip={{ duration: 200 }}
+		>
 			<label class="flex items-center gap-3 border border-gray-700 rounded p-2">
 				<input
 					type="checkbox"
