@@ -8,6 +8,7 @@
 		'All the transitions and animations are using Svelte helpers!',
 		'There are no external libraries used for transitions.',
 		'Styling is done using Tailwind CSS and Daisy UI.',
+		'API routes used for the persisted Todos are also from Svelte',
 	];
 
 	let i = 0;
