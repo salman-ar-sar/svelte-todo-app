@@ -2,8 +2,8 @@
 	import '../app.css';
 </script>
 
-<svelte:head>
+<head>
 	<title>Svelte Todo</title>
-</svelte:head>
+</head>
 
 <slot />
