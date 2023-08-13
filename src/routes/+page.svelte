@@ -1,6 +1,7 @@
 <script>
 	import { createTodoStore } from './TodoStore';
 	import TodoList from './TodoList.svelte';
+	import Header from './Header.svelte';
 
 	const todos = createTodoStore([
 		{ done: true, description: 'write some docs' },
@@ -10,7 +11,7 @@
 </script>
 
 <div class="flex flex-1 flex-col justify-center items-center">
-	<h1 class="text-3xl font-bold underline text-cyan-200">Hello world!</h1>
+	<Header />
 
 	<div class="grid grid-cols-2 gap-4 max-w-xl mt-6">
 		<input

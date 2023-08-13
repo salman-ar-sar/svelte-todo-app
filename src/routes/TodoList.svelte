@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { TodoStore } from './TodoStore';
-	import { receive, send } from './transition';
+	import { receive, send } from './transitions';
 
 	export let store: TodoStore;
 	export let done: boolean;
