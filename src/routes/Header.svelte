@@ -7,7 +7,7 @@
 		'This site is made using just Svelte.',
 		'All the transitions and animations are using Svelte helpers!',
 		'There are no external libraries used for transitions.',
-        'Styling is done using Tailwind CSS and Daisy UI.'
+		'Styling is done using Tailwind CSS and Daisy UI.'
 	];
 
 	let i = 0;
