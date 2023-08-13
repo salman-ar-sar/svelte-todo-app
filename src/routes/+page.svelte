@@ -2,6 +2,7 @@
 	import { createTodoStore } from './TodoStore';
 	import TodoList from './TodoList.svelte';
 	import Header from './Header.svelte';
+	import Progress from './Progress.svelte';
 
 	const todos = createTodoStore([
 		{ done: true, description: 'write some docs' },
@@ -34,6 +35,8 @@
 			<TodoList store={todos} done={true} />
 		</div>
 	</div>
+
+	<Progress className="mt-6 min-w-[36rem]" />
 </div>
 
 <style lang="postcss">
