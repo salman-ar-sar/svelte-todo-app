@@ -8,7 +8,7 @@
 	const todos = createTodoStore([
 		{ done: true, description: 'write some docs' },
 		{ done: false, description: 'start writing blog post' },
-		{ done: false, description: 'fix some bugs' }
+		{ done: false, description: 'fix some bugs' },
 	]);
 
 	export let data;
@@ -60,8 +60,8 @@
 						method: 'POST',
 						body: JSON.stringify({ description }),
 						headers: {
-							'Content-Type': 'application/json'
-						}
+							'Content-Type': 'application/json',
+						},
 					});
 
 					const { id } = await response.json();
@@ -71,8 +71,8 @@
 						{
 							id,
 							description,
-							done: false
-						}
+							done: false,
+						},
 					];
 
 					input.value = '';

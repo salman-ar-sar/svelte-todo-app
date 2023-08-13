@@ -18,7 +18,7 @@ export function createTodoStore(initial: InitialTodo[]) {
 		return {
 			id: uid++,
 			done,
-			description
+			description,
 		};
 	});
 
@@ -30,7 +30,7 @@ export function createTodoStore(initial: InitialTodo[]) {
 			const todo = {
 				id: uid++,
 				done: false,
-				description
+				description,
 			};
 
 			update(($todos) => [...$todos, todo]);
@@ -40,6 +40,6 @@ export function createTodoStore(initial: InitialTodo[]) {
 		},
 		mark: (todo: Todo, done: boolean) => {
 			update(($todos) => [...$todos.filter((t) => t !== todo), { ...todo, done }]);
-		}
+		},
 	};
 }

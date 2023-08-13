@@ -30,11 +30,11 @@ export function createTodo({ userid, description }: Pick<TodoRequest, 'userid' |
 	todos.set(id, {
 		id,
 		description,
-		done: false
+		done: false,
 	});
 
 	return {
-		id
+		id,
 	};
 }
 

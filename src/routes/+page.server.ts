@@ -9,6 +9,6 @@ export function load({ cookies }) {
 	}
 
 	return {
-		todos: database.getTodos(userid)
+		todos: database.getTodos(userid),
 	};
 }

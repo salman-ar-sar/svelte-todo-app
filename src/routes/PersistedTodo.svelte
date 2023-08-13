@@ -28,8 +28,8 @@
 							method: 'PUT',
 							body: JSON.stringify({ done }),
 							headers: {
-								'Content-Type': 'application/json'
-							}
+								'Content-Type': 'application/json',
+							},
 						});
 					}}
 				/>
@@ -39,7 +39,7 @@
 					aria-label="Mark as complete"
 					on:click={async () => {
 						await fetch(`/todo/${todo.id}`, {
-							method: 'DELETE'
+							method: 'DELETE',
 						});
 
 						data.todos = data.todos.filter((t) => t !== todo);

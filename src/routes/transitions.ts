@@ -14,9 +14,9 @@ export const [send, receive] = crossfade({
 			css: (t) => `
 				transform: ${transform} scale(${t});
 				opacity: ${t}
-			`
+			`,
 		};
-	}
+	},
 });
 
 export function typewriter(node: Node, { speed = 1 }) {
@@ -34,6 +34,6 @@ export function typewriter(node: Node, { speed = 1 }) {
 		tick: (t: number) => {
 			const i = Math.trunc(text.length * t);
 			node.textContent = text.slice(0, i);
-		}
+		},
 	};
 }
