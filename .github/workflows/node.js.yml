@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Lint / Run tests
 
 on:
   push:
@@ -42,5 +42,3 @@ jobs:
       run: pnpm lint
     - name: Run unit tests
       run: pnpm test:unit
-    - name: Build project
-      run: pnpm build
